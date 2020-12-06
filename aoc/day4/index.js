@@ -98,7 +98,6 @@ function aoc4_2(filename) {
       }
     }
   }
-  console.log(valid);
   return valid;
 }
 
