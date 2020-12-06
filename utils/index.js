@@ -8,6 +8,10 @@ function parseFileToInt(filename) {
     .map((value) => Number(value));
 }
 
+function parseFileToParagraphs(filename) {
+  return fs.readFileSync(filename, "utf8").split(/(?:\r\n){2,}/);
+}
+
 function parseFile(filename) {
   return fs.readFileSync(filename, "utf8").split("\r\n");
 }
@@ -15,4 +19,5 @@ function parseFile(filename) {
 module.exports = {
   parseFiletoInt: parseFileToInt,
   parseFile: parseFile,
+  parseFileToParagraphs: parseFileToParagraphs,
 };

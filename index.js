@@ -1,3 +1,3 @@
 const solutions = require("./aoc");
-
-console.log(solutions);
+solutions;
+console.log(solutions.day4.part2);
